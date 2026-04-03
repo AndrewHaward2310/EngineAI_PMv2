@@ -22,21 +22,25 @@
 
 ## 🎥 Demo Videos
 
+> 📥 Tất cả video có thể tải về từ [**Release v1.0**](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/tag/v1.0)
+
 ### Velocity — Locomotion (đi bộ theo lệnh tốc độ)
 
-https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/velocity_1080p.mp4
+https://github.com/AndrewHaward2310/EngineAI_PMv2/assets/velocity_demo
+
+[▶️ Xem video Velocity (4.7 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/velocity_1080p.mp4)
 
 ### Boxing — Motion Mimicry (bắt chước đấm bốc)
 
-https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/boxing_1080p_60s.mp4
+[▶️ Xem video Boxing (18 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/boxing_1080p_60s.mp4)
 
 ### Kicking — Motion Mimicry (bắt chước đá)
 
-https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/kicking_1080p_60s.mp4
+[▶️ Xem video Kicking (21 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/kicking_1080p_60s.mp4)
 
 ### Dance — Motion Mimicry (bắt chước nhảy, trained on A100 80GB)
 
-https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/dance_1080p_60s.mp4
+[▶️ Xem video Dance (27 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/dance_1080p_60s.mp4)
 
 ---
 
