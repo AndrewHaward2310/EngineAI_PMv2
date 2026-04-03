@@ -1,6 +1,6 @@
 # 🤖 EngineAI PM_v2 — Humanoid Robot RL Training
 
-> **Bài test tích hợp robot EngineAI PM_v2 (24 DOF) vào framework mjlab (MuJoCo + Warp GPU)**
+> **Integration of EngineAI PM_v2 (24 DOF) humanoid robot into the mjlab framework (MuJoCo + Warp GPU) for locomotion and motion mimicry training.**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)](https://python.org)
 [![MuJoCo](https://img.shields.io/badge/MuJoCo-Warp%20GPU-green)](https://mujoco.org)
@@ -9,44 +9,40 @@
 
 ---
 
-## 📊 Kết Quả Training
+## 📊 Training Results
 
-| Task | Iterations | Envs | GPU | Mean Reward | Thời gian |
-|:-----|:----------:|:----:|:---:|:-----------:|:---------:|
-| **Velocity** (đi bộ) | 20,000 | 4,096 | RTX 3090 | **65.98** | ~7h |
-| **Boxing** (đấm bốc) | 30,000 | 4,096 | RTX 3090 | **~35** | ~14h |
-| **Kicking** (đá) | 20,000 | 4,096 | RTX 3090 | **~32** | ~7h |
-| **Dance** (nhảy) | 5,000 | 16,384 | A100 80GB | **38.27** | ~4.3h |
+| Task | Iterations | Envs | GPU | Mean Reward | Time |
+|:-----|:----------:|:----:|:---:|:-----------:|:----:|
+| **Velocity** (walking) | 20,000 | 4,096 | RTX 3090 | **65.98** | ~7h |
+| **Boxing** (punching) | 30,000 | 4,096 | RTX 3090 | **~35** | ~14h |
+| **Kicking** | 20,000 | 4,096 | RTX 3090 | **~32** | ~7h |
+| **Dance** | 5,000 | 16,384 | A100 80GB | **38.27** | ~4.3h |
 
 ---
 
 ## 🎥 Demo Videos
 
-> 📥 Tất cả video có thể tải về từ [**Release v1.0**](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/tag/v1.0)
+### Velocity — Locomotion (velocity command tracking)
 
-### Velocity — Locomotion (đi bộ theo lệnh tốc độ)
+https://github.com/user-attachments/assets/a5ed1b38-dc4e-4f33-a737-0bcccb9369ff
 
-https://github.com/AndrewHaward2310/EngineAI_PMv2/assets/velocity_demo
+### Boxing — Motion Mimicry
 
-[▶️ Xem video Velocity (4.7 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/velocity_1080p.mp4)
+https://github.com/user-attachments/assets/63c0d6e3-4d33-439a-a5a2-b85f6bce5aa4
 
-### Boxing — Motion Mimicry (bắt chước đấm bốc)
+### Kicking — Motion Mimicry
 
-[▶️ Xem video Boxing (18 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/boxing_1080p_60s.mp4)
+https://github.com/user-attachments/assets/1cc33173-1a33-416c-a7b3-a6432cddf466
 
-### Kicking — Motion Mimicry (bắt chước đá)
+### Dance — Motion Mimicry (trained on A100 80GB)
 
-[▶️ Xem video Kicking (21 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/kicking_1080p_60s.mp4)
-
-### Dance — Motion Mimicry (bắt chước nhảy, trained on A100 80GB)
-
-[▶️ Xem video Dance (27 MB)](https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/dance_1080p_60s.mp4)
+https://github.com/user-attachments/assets/622c792e-5dd5-4f29-af4f-75beae3835d7
 
 ---
 
-## 🏗️ Kiến Trúc Kỹ Thuật
+## 🏗️ Technical Architecture
 
-### Robot EngineAI PM_v2
+### Robot: EngineAI PM_v2
 
 ```
 24 DOF Humanoid Robot
@@ -94,24 +90,24 @@ https://github.com/AndrewHaward2310/EngineAI_PMv2/assets/velocity_demo
 
 ---
 
-## 📁 Cấu Trúc Thư Mục
+## 📁 Repository Structure
 
 ```
 EngineAI_PMv2/
-├── 📄 README.md                       ← Bạn đang đọc file này
+├── 📄 README.md                       ← You are here
 │
-├── 📂 docs/                           ← Tài liệu phân tích (11 files, ~3,730 dòng)
-│   ├── de_bai_phan_tich.md            # Đề bài + phân tích yêu cầu
-│   ├── bao_cao_tong_hop.md            # Báo cáo tổng hợp cuối cùng
-│   ├── big_picture_overview.md        # Tổng quan: bài toán → RL → mjlab
-│   ├── codebase_analysis.md           # Kiến trúc Manager-Based
-│   ├── ppo_training_deep_dive.md      # Thuật toán PPO chi tiết
-│   ├── reward_engineering.md          # Reward design analysis
-│   ├── engineai_integration_design.md # Thiết kế tích hợp PM_v2
+├── 📂 docs/                           ← Technical documentation (11 files, ~3,730 lines)
+│   ├── de_bai_phan_tich.md            # Assignment analysis & strategy
+│   ├── bao_cao_tong_hop.md            # Final summary report
+│   ├── big_picture_overview.md        # Big picture: RL → Simulation → mjlab
+│   ├── codebase_analysis.md           # Manager-Based architecture deep dive
+│   ├── ppo_training_deep_dive.md      # PPO algorithm & hyperparameters
+│   ├── reward_engineering.md          # Reward design (14 terms)
+│   ├── engineai_integration_design.md # PM_v2 integration design
 │   ├── motion_pipeline.md             # PKL → CSV → NPZ pipeline
 │   ├── pmv2_config_analysis.md        # PM_v2 config analysis
 │   ├── g1_velocity_evaluation_report.md  # G1 training report
-│   └── g1_vs_engineai_comparison.md   # So sánh kỹ thuật
+│   └── g1_vs_engineai_comparison.md   # G1 vs EngineAI comparison
 │
 ├── 📂 code/                           ← Source code
 │   ├── asset_zoo/engineai_pmv2/       # Robot MJCF model + 25 mesh STLs
@@ -150,17 +146,17 @@ EngineAI_PMv2/
 Retarget Mocap → PKL → pkl_to_csv.py → CSV → csv_to_npz.py (MuJoCo FK) → NPZ → Training
 ```
 
-| Motion | Frames (30fps) | Output (50fps) | Duration | Size |
-|:------:|:--------------:|:--------------:|:--------:|:----:|
-| Boxing | 97 | ~162 | 3.2s | 268KB |
-| Dance | 252 | ~420 | 8.4s | 698KB |
-| Kicking | 152 | ~253 | 4.6s | 382KB |
+| Motion | Input (30fps) | Output (50fps) | Duration | Size |
+|:------:|:------------:|:--------------:|:--------:|:----:|
+| Boxing | 97 frames | ~162 frames | 3.2s | 268KB |
+| Dance | 252 frames | ~420 frames | 8.4s | 698KB |
+| Kicking | 152 frames | ~253 frames | 4.6s | 382KB |
 
-> ⚠️ **Quaternion convention**: PKL dùng `[x,y,z,w]` (scalar-last), MuJoCo dùng `[w,x,y,z]` (scalar-first). Script tự swap.
+> ⚠️ **Quaternion convention**: Input PKL uses `[x,y,z,w]` (scalar-last), MuJoCo uses `[w,x,y,z]` (scalar-first). The conversion script handles the swap automatically.
 
 ---
 
-## 🆚 So Sánh G1 vs EngineAI PM_v2
+## 🆚 G1 vs EngineAI PM_v2 Comparison
 
 | Dimension | Unitree G1 | EngineAI PM_v2 |
 |:----------|:----------:|:--------------:|
@@ -170,21 +166,21 @@ Retarget Mocap → PKL → pkl_to_csv.py → CSV → csv_to_npz.py (MuJoCo FK) �
 | **Training speed** | 14.5K steps/s | **80K steps/s** |
 | **Mimic motions** | — | 3 (boxing/dance/kick) |
 
-**Key insight**: PM_v2 đạt reward velocity cao hơn G1 gần **2×** nhờ trọng tâm thấp → dễ balance hơn.
+**Key insight**: PM_v2 achieves nearly **2× higher** velocity reward than G1, primarily due to its lower center of mass making balance easier.
 
 ---
 
 ## 🚀 Quick Start
 
-### Training (trên Google Colab A100)
+### Training (on Google Colab A100)
 ```bash
-# 1. Upload colab_scripts/ lên Google Drive
-# 2. Trên Colab notebook:
+# 1. Upload colab_scripts/ to Google Drive
+# 2. In Colab notebook:
 !python setup_colab.py
 !bash train_and_render_dance.sh
 ```
 
-### Render video từ checkpoint
+### Render video from checkpoint
 ```bash
 cd mjlab
 MUJOCO_GL=egl uv run python render_headless.py
@@ -192,23 +188,23 @@ MUJOCO_GL=egl uv run python render_headless.py
 
 ---
 
-## 📝 Tài Liệu Chi Tiết
+## 📝 Documentation
 
-Xem thư mục [`docs/`](docs/) để đọc phân tích chi tiết:
+See the [`docs/`](docs/) directory for detailed technical analysis:
 
-| Đọc trước | Tài liệu | Nội dung |
-|:----------:|:---------|:---------|
-| 1️⃣ | [de_bai_phan_tich.md](docs/de_bai_phan_tich.md) | Phân tích đề bài + chiến lược |
-| 2️⃣ | [big_picture_overview.md](docs/big_picture_overview.md) | Tổng quan RL → Simulation → mjlab |
-| 3️⃣ | [codebase_analysis.md](docs/codebase_analysis.md) | Kiến trúc Manager-Based chi tiết |
+| Order | Document | Content |
+|:-----:|:---------|:--------|
+| 1️⃣ | [de_bai_phan_tich.md](docs/de_bai_phan_tich.md) | Assignment analysis & execution strategy |
+| 2️⃣ | [big_picture_overview.md](docs/big_picture_overview.md) | Big picture: RL → Simulation → mjlab |
+| 3️⃣ | [codebase_analysis.md](docs/codebase_analysis.md) | Manager-Based architecture deep dive |
 | 4️⃣ | [ppo_training_deep_dive.md](docs/ppo_training_deep_dive.md) | PPO algorithm + hyperparameters |
 | 5️⃣ | [reward_engineering.md](docs/reward_engineering.md) | 14 reward terms + design philosophy |
-| 6️⃣ | [motion_pipeline.md](docs/motion_pipeline.md) | PKL → CSV → NPZ pipeline |
-| 7️⃣ | [engineai_integration_design.md](docs/engineai_integration_design.md) | Thiết kế tích hợp PM_v2 |
-| 8️⃣ | [bao_cao_tong_hop.md](docs/bao_cao_tong_hop.md) | **📋 Báo cáo tổng hợp cuối cùng** |
+| 6️⃣ | [motion_pipeline.md](docs/motion_pipeline.md) | PKL → CSV → NPZ conversion pipeline |
+| 7️⃣ | [engineai_integration_design.md](docs/engineai_integration_design.md) | PM_v2 integration design |
+| 8️⃣ | [bao_cao_tong_hop.md](docs/bao_cao_tong_hop.md) | **📋 Final summary report** |
 
 ---
 
-**Ứng viên**: Lê Đức Nguyên  
+**Candidate**: Le Duc Nguyen  
 **Framework**: [mjlab](https://github.com/mujocolab/mjlab) (MuJoCo + Warp GPU)  
 **Training**: RTX 3090 (server) + A100 80GB (Google Colab)
