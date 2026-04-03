@@ -3,7 +3,7 @@
 > **Bài test tích hợp robot EngineAI PM_v2 (24 DOF) vào framework mjlab (MuJoCo + Warp GPU)**
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&logoColor=white)](https://python.org)
-[![MuJoCo](https://img.shields.io/badge/MuJoCo-Warp%20GPU-green?logo=data:image/png;base64,iVBORw0KGgo=)](https://mujoco.org)
+[![MuJoCo](https://img.shields.io/badge/MuJoCo-Warp%20GPU-green)](https://mujoco.org)
 [![PPO](https://img.shields.io/badge/Algorithm-PPO-orange)](https://arxiv.org/abs/1707.06347)
 [![License](https://img.shields.io/badge/License-Private-red)]()
 
@@ -24,21 +24,19 @@
 
 ### Velocity — Locomotion (đi bộ theo lệnh tốc độ)
 
-https://github.com/user-attachments/assets/velocity_1080p.mp4
-
-<video src="videos/velocity_1080p.mp4" controls width="100%"></video>
+https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/velocity_1080p.mp4
 
 ### Boxing — Motion Mimicry (bắt chước đấm bốc)
 
-<video src="videos/boxing_1080p_60s.mp4" controls width="100%"></video>
+https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/boxing_1080p_60s.mp4
 
 ### Kicking — Motion Mimicry (bắt chước đá)
 
-<video src="videos/kicking_1080p_60s.mp4" controls width="100%"></video>
+https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/kicking_1080p_60s.mp4
 
 ### Dance — Motion Mimicry (bắt chước nhảy, trained on A100 80GB)
 
-<video src="videos/dance_1080p_60s.mp4" controls width="100%"></video>
+https://github.com/AndrewHaward2310/EngineAI_PMv2/releases/download/v1.0/dance_1080p_60s.mp4
 
 ---
 
